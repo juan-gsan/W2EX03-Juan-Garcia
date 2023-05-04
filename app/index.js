@@ -18,3 +18,4 @@ const checkIfPrime = (number) => {
 
 exports.checkAllVowels = checkAllVowels;
 exports.checkIfEven = checkIfEven;
+exports.checkIfPrime = checkIfPrime;
