@@ -1,11 +1,11 @@
-const checkAllVowels = (word) => {
+export const checkAllVowels = (word) => {
   const vowels = ["a", "e", "i", "o", "u"];
   return vowels.every((vowel) => word.includes(vowel));
 };
 
-const checkIfEven = (number) => number % 2 === 0;
+export const checkIfEven = (number) => number % 2 === 0;
 
-const checkIfPrime = (number) => {
+export const checkIfPrime = (number) => {
   for (let count = 2; count < number; count++) {
     if (number % count === 0) {
       return false;
@@ -15,9 +15,6 @@ const checkIfPrime = (number) => {
   return true;
 };
 
-const findLargestNumber = (numbers) => Math.max(...numbers);
+export const findLargestNumber = (numbers) => Math.max(...numbers);
 
-exports.checkAllVowels = checkAllVowels;
-exports.checkIfEven = checkIfEven;
-exports.checkIfPrime = checkIfPrime;
-exports.findLargestNumber = findLargestNumber;
+export const findLargestWord = () => {};
