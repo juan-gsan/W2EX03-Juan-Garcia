@@ -1,4 +1,4 @@
-import checkAllVowels from "./index";
+import { checkAllVowels } from "./index";
 
 describe("Given a checkAllVowels function", () => {
   describe("When it receives the word 'murcielago'", () => {
