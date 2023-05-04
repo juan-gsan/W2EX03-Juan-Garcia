@@ -5,15 +5,11 @@ const checkAllVowels = (word) => {
 };
 
 const checkIfEven = (number) => {
-  for (let count = 1; count < number; count++) {
-    if (number === count) {
-      return false;
-    }
-
-    if (number === count + 1) {
-      return true;
-    }
+  if (number % 2 !== 0) {
+    return false;
   }
+
+  return true;
 };
 
 exports.checkAllVowels = checkAllVowels;
