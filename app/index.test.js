@@ -1,4 +1,9 @@
-import { checkAllVowels, checkIfEven, checkIfPrime } from "./index";
+import {
+  checkAllVowels,
+  checkIfEven,
+  checkIfPrime,
+  findLargestNumber,
+} from "./index";
 
 describe("Given a checkAllVowels function", () => {
   describe("When it receives the word 'murcielago'", () => {
@@ -64,6 +69,30 @@ describe("Given a checkIfPrime function", () => {
       const isPrime = checkIfPrime(number);
 
       expect(isPrime).toBe(expectedOutput);
+    });
+  });
+});
+
+describe("Given a findLargestNumber function", () => {
+  describe("When it receives [1,24,76,34,3,63]", () => {
+    test("Then it should return 76", () => {
+      const numbers = [1, 24, 76, 34, 3, 63];
+      const expectedOutput = 76;
+
+      const largestNumber = findLargestNumber(numbers);
+
+      expect(largestNumber).toBe(expectedOutput);
+    });
+  });
+
+  describe("When it receives [1,-24,-76,34,3,-63]", () => {
+    test("Then it should return 34", () => {
+      const numbers = [1, -24, -76, 34, 3, -63];
+      const expectedOutput = 34;
+
+      const largestNumber = findLargestNumber(numbers);
+
+      expect(largestNumber).toBe(expectedOutput);
     });
   });
 });

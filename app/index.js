@@ -1,6 +1,5 @@
 const checkAllVowels = (word) => {
   const vowels = ["a", "e", "i", "o", "u"];
-
   return vowels.every((vowel) => word.includes(vowel));
 };
 
@@ -16,6 +15,9 @@ const checkIfPrime = (number) => {
   return true;
 };
 
+const findLargestNumber = (numbers) => Math.max(...numbers);
+
 exports.checkAllVowels = checkAllVowels;
 exports.checkIfEven = checkIfEven;
 exports.checkIfPrime = checkIfPrime;
+exports.findLargestNumber = findLargestNumber;
