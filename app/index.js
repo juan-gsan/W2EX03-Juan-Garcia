@@ -4,16 +4,7 @@ const checkAllVowels = (word) => {
   return vowels.every((vowel) => word.includes(vowel));
 };
 
-const checkIfEven = (number) => {
-  for (let count = 1; count < number; count++) {
-    if (number === count) {
-      return false;
-    }
-
-    if (number === count + 1) {
-      return true;
-    }
-  }
-};
+const checkIfEven = (number) => number % 2 === 0;
 
 exports.checkAllVowels = checkAllVowels;
+exports.checkIfEven = checkIfEven;
